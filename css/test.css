@@ -50,7 +50,11 @@
 }
 
 
-
+.h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
 
 body{
     background-color: #9AA7AC;
@@ -72,6 +76,30 @@ body{
     font-family: 'Heeblo', 'Arial';
     font-size: 30px;
 
+}
+
+/* .projectContainer{
+    width:90%
+} */
+
+.projectCard{
+/*     display: flex;
+    justify-content: center; */
+    text-align: center;
+    background-color: #D0F4EA;
+}
+
+.card-title{
+    font-size: 40px;
+}
+
+.projectCardImageSOLAP{
+    
+    width:80%;
+}
+
+.projectCardImageSCH{
+    width:200px;
 }
 
 .footer{
