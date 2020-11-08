@@ -82,6 +82,12 @@ body{
     width:90%
 } */
 
+.publicationCard{
+    text-align: center;
+    background-color: #D0F4EA;
+    margin-top: 20px;
+}
+
 .projectCard{
 /*     display: flex;
     justify-content: center; */

@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/connect.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/connect.js"></script>
     <!-- Hotjar Tracking Code for https://dahaynes.github.io/ -->
@@ -31,31 +42,37 @@
 
 
 </head>
-<header>
-    <div class="navBar">
-        <div id="left">
-            <a href="index.html">
-                <img src="img/HaynesLogo.png" height="60px" alt="David Haynes logo">
-            </a>
-        </div>
-        <div>
+<nav class="navbar navbar-expand-lg navbar-dark dhNavBar">
+    <a class="navbar-brand" href="#"><img src="img/HaynesLogo.png" height="60px" alt="David Haynes logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </div>
-        <div class="navMenu">
-            <ul>
-                <li>News</li>
-                <li class="dropDown">About</li>
-                <div class="menuItems invisible">
-                    <div class="menuDiv"><a class="dropLinks" href=publications.html>Publications</a></div>
-                    <div class="menuDiv"><a class="dropLinks" href=research.html>Research</a></div>
-                    <div class="menuDiv">Projects</div>
-                    <div class="menuDiv">Teaching</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto justify-content-end">
+            <li class="nav-item active">
+                <a class="nav-link dhLink" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link dhLink" href="#">News </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dhLink" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="publications.html">Publications</a>
+                    <a class="dropdown-item" href="#">Research</a>
+                    <a class="dropdown-item" href="#">Projects</a>
+                    <a class="dropdown-item" href="#">Teaching</a>
+                    <a class="dropdown-item" href="connect.html">Connect</a>
                 </div>
-                <li><a class="navLinks" href="connect.html">Contact</a></li>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </div>
-</header>
+</nav>
 
 
 
@@ -63,13 +80,11 @@
 
 <div class="connectSingle">
     <div class="connectContent">
-        <h1>Let's Connect</h1>
-        <img src="img/Black Man Working on Analytics.svg" alt="black man working" height=500px>
+        <h1 class="connectMessage">Let's Connect</h1>
+        <img src="img/Black-Man-Working-on-Analytics.svg" alt="black man working" height=500px> 
         <p>Want to join my lab!</p>
 
         <p class="myEmail">Send me your resume or CV</p>
-
-
         <img class="email invisible" src="img/black_email.svg">
     </div>
 
@@ -78,19 +93,18 @@
 
 </body>
 
-<footer>
-    <div class=social>
-        <ul>
-            <li>Github </li>
-            <li>LinkedIn</li>
+<footer class="container-fluid-content footer">
+    <div class="row footerItems">
+        <!-- <span class="text-muted">Place sticky footer content here.</span> -->
+        <ul class="col-sm-4 list-group list-group-horizontal-md">
+            <li class="list-group-item">Github</li>
+            <li class="list-group-item">LinkedIn</li>
+
         </ul>
-    </div>
-    <div></div>
-    <div class="links">
-        <ul>
-            <li>About </li>
-            <li>Projects </li>
-            <li>Contact Me</li>
+        <div class="col-sm-4"></div>
+        <ul class="col-sm-4 list-group list-group-horizontal-md">
+            <li class="list-group-item">About Me</li>
+            <li class="list-group-item">Contact Me</li>
         </ul>
     </div>
 </footer>

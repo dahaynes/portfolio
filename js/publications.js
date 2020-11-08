@@ -14,7 +14,7 @@ function loadMetaData(jsonArray) {
 
         
         /* This is a template string a mixture of JS and HTML */
-        var articleCard =  `<div class="card text-center col-md-6 col-sm12 projectCard" >
+        var articleCard =  `<div class="card text-center col-md-6 col-sm12 publicationCard" >
                     <div class="card-body">
                         <h5 class="card-title">${arrayItem.title}</h5>
                         <p class="card-text">${arrayItem.author}</p>                        
