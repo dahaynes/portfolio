@@ -103,6 +103,7 @@ body{
 }
 
 .footer{
+    margin-top: 20px;
     background-color: #E4E4E4;
     
 /*     display: grid;
@@ -121,6 +122,14 @@ body{
     margin: 20px;
     background-color: #E4E4E4;
     border: 0px;
+}
+
+.abstractText{
+    display: none;
+}
+
+.pubButtons {
+    width: 90%;
 }
 
 
